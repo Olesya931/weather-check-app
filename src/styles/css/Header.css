@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'San Francisco Pro Display Regular';
+  src: url("../../fonts/SFProDisplay-Regular/SFProDisplay-Regular.woff") format("woff"), url("../../fonts/SFProDisplay-Regular/SFProDisplay-Regular.ttf") format("ttf"), url("../../fonts/SFProDisplay-Regular/SFProDisplay-Regular.eot") format("eot");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'San Francisco Pro Display Medium';
+  src: url("../../fonts/SFProDisplay-Medium/SFProDisplay-Medium.woff") format("woff"), url("../../fonts/SFProDisplay-Medium/SFProDisplay-Medium.ttf") format("ttf"), url("../../fonts/SFProDisplay-Medium/SFProDisplay-Medium.eot") format("eot");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'San Francisco Pro Display Semibold';
+  src: url("../../fonts/SFProDisplay-Semibold/SFProDisplay-Semibold.woff") format("woff"), url("../../fonts/SFProDisplay-Semibold/SFProDisplay-Semibold.ttf") format("ttf"), url("../../fonts/SFProDisplay-Semibold/SFProDisplay-Semibold.eot") format("eot");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'San Francisco Pro Display Bold';
+  src: url("../../fonts/SFProDisplay-Bold/SFProDisplay-Bold.woff") format("woff"), url("../../fonts/SFProDisplay-Bold/SFProDisplay-Bold.ttf") format("ttf"), url("../../fonts/SFProDisplay-Bold/SFProDisplay-Bold.eot") format("eot");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.header {
+  height: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.logo__img {
+  width: 30px;
+  height: 30px;
+  margin-right: 12px;
+}
+
+.logo__text {
+  font-family: 'San Francisco Pro Display Bold';
+  font-weight: bold;
+  color: #fff;
+}
+
+@media (max-width: 320px) {
+  .search__input {
+    max-width: 280px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    background: #2A2F45;
+  }
+}

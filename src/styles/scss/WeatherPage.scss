@@ -1,0 +1,203 @@
+@import 'vars';
+@import 'fonts';
+
+.weather-page{
+    background:linear-gradient(180deg, #5A607C 0%, #161B30 49.93%);
+    min-height: 100vh;
+}
+
+.header__weather{
+    display: none;
+}
+
+.head{
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0 48px;
+    }
+
+    &__back{
+        width: 24px;
+        height: 24px;
+        text-decoration: none;
+    }
+
+    &__back-img{
+        width: 100%;
+        height: 100%;
+        fill:$gray;
+        &:hover{
+            fill:$dark-blue;
+        }
+    }
+
+    &__back-text{
+        display:none;
+    }
+
+    &__bookmark{
+        background: transparent;
+        border: none;
+        width: 24px;
+        height: 24px;
+    }
+
+    &__bookmark-img{
+        width: 100%;
+        height: 100%;  
+        fill:none;
+        &:hover{
+            cursor: pointer;
+        }
+        &_toggle{
+            fill:$gray;
+        }
+    }
+
+}
+
+.weather{
+    &__inner{
+        width: 224px;
+        margin: 0 auto;
+    }
+
+    &__name{
+        font-family: 'San Francisco Pro Display Medium';
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 110.7%;
+        text-align: center;
+    }
+
+    &__description{
+        font-size: 14px;
+        line-height: 110.7%;
+        text-align: center;
+        padding: 14px 0 16px;
+    }
+
+    &__main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height:281px;
+    }
+
+    &__temperature{
+        font-family: 'San Francisco Pro Display Semibold';
+        background: linear-gradient(180deg, #FFFFFF 11.65%, rgba(255, 255, 255, 0) 139.47%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        font-weight: 600;
+        font-size: 120px;
+        line-height: 110.7%;
+        text-align: center;
+    }
+
+    &__icon{
+        width: 180px;
+        height: 180px;
+        position: relative;
+        top:-20px;
+        &-img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__pressure{
+        display: flex;
+        align-items: center;
+        padding: 16px 0 40px;
+        width:119px;
+        margin: 0 auto;
+        &-icon{
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+        }
+        &-value{
+            font-size: 14px;
+            line-height: 17px;
+            text-shadow: -1.39839px 2.09758px 0.699193px rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    &__sunset{
+        font-size: 14px;
+        line-height: 110.7%;
+        color: $gray;
+        text-align: center;
+        padding-bottom: 127px;
+    }
+
+}
+
+
+@media (min-width:768px){
+    .header__weather{
+        height: 65px;
+        display: flex;
+        align-items: center;
+        background: $dark-blue;
+    }
+
+    .weather{
+        &__main{
+            flex-direction: row;
+            width: 434px;
+            height:191px;
+        }
+
+        &__temperature{
+            font-size: 129.755px;
+        }
+
+        &__icon{
+            width:191px;
+            height:191px;
+            position: static;
+        }
+
+        &__name{
+            font-weight: 500;
+            font-size: 56px;
+            line-height: 110.7%;
+        }
+
+        &__description{
+            padding: 16px 0;
+        }
+
+        &__pressure{
+            width: 131px;
+            padding: 45px 0 32px;
+            &-value{
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+    }
+
+    .head{
+        &__inner{
+            padding: 24px 11px 28px;
+        }
+
+        &__back{
+            width: 81px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &-text{
+                display:block;
+                font-size: 16px;
+                line-height: 110.7%;
+                color: $gray;
+            }
+        }
+    }
+}

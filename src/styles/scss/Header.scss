@@ -1,0 +1,40 @@
+@import 'vars';
+@import 'fonts';
+.header{
+    height: 65px;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo{
+    &__link{
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    &__img{
+      width: 30px;
+      height: 30px;
+      margin-right: 12px;
+    }
+
+    &__text{
+      font-family: 'San Francisco Pro Display Bold';
+      font-weight: bold;
+      color:#fff;
+    }
+  }
+  
+  @media(max-width:320px){
+    .search__input{
+      max-width:280px;
+    }
+  }
+  
+  @media (min-width:768px){
+    .header{
+      background: $dark-blue;
+    }
+  
+  }

@@ -1,0 +1,245 @@
+@font-face {
+  font-family: 'San Francisco Pro Display Regular';
+  src: url("../../fonts/SFProDisplay-Regular/SFProDisplay-Regular.woff") format("woff"), url("../../fonts/SFProDisplay-Regular/SFProDisplay-Regular.ttf") format("ttf"), url("../../fonts/SFProDisplay-Regular/SFProDisplay-Regular.eot") format("eot");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'San Francisco Pro Display Medium';
+  src: url("../../fonts/SFProDisplay-Medium/SFProDisplay-Medium.woff") format("woff"), url("../../fonts/SFProDisplay-Medium/SFProDisplay-Medium.ttf") format("ttf"), url("../../fonts/SFProDisplay-Medium/SFProDisplay-Medium.eot") format("eot");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'San Francisco Pro Display Semibold';
+  src: url("../../fonts/SFProDisplay-Semibold/SFProDisplay-Semibold.woff") format("woff"), url("../../fonts/SFProDisplay-Semibold/SFProDisplay-Semibold.ttf") format("ttf"), url("../../fonts/SFProDisplay-Semibold/SFProDisplay-Semibold.eot") format("eot");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'San Francisco Pro Display Bold';
+  src: url("../../fonts/SFProDisplay-Bold/SFProDisplay-Bold.woff") format("woff"), url("../../fonts/SFProDisplay-Bold/SFProDisplay-Bold.ttf") format("ttf"), url("../../fonts/SFProDisplay-Bold/SFProDisplay-Bold.eot") format("eot");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.weather-page {
+  background: -webkit-gradient(linear, left top, left bottom, from(#5A607C), color-stop(49.93%, #161B30));
+  background: linear-gradient(180deg, #5A607C 0%, #161B30 49.93%);
+  min-height: 100vh;
+}
+
+.header__weather {
+  display: none;
+}
+
+.head__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0 48px;
+}
+
+.head__back {
+  width: 24px;
+  height: 24px;
+  text-decoration: none;
+}
+
+.head__back-img {
+  width: 100%;
+  height: 100%;
+  fill: #8A91AB;
+}
+
+.head__back-img:hover {
+  fill: #2A2F45;
+}
+
+.head__back-text {
+  display: none;
+}
+
+.head__bookmark {
+  background: transparent;
+  border: none;
+  width: 24px;
+  height: 24px;
+}
+
+.head__bookmark-img {
+  width: 100%;
+  height: 100%;
+  fill: none;
+}
+
+.head__bookmark-img:hover {
+  cursor: pointer;
+}
+
+.head__bookmark-img_toggle {
+  fill: #8A91AB;
+}
+
+.weather__inner {
+  width: 224px;
+  margin: 0 auto;
+}
+
+.weather__name {
+  font-family: 'San Francisco Pro Display Medium';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 110.7%;
+  text-align: center;
+}
+
+.weather__description {
+  font-size: 14px;
+  line-height: 110.7%;
+  text-align: center;
+  padding: 14px 0 16px;
+}
+
+.weather__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 281px;
+}
+
+.weather__temperature {
+  font-family: 'San Francisco Pro Display Semibold';
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(11.65%, #FFFFFF), color-stop(139.47%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(180deg, #FFFFFF 11.65%, rgba(255, 255, 255, 0) 139.47%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  font-size: 120px;
+  line-height: 110.7%;
+  text-align: center;
+}
+
+.weather__icon {
+  width: 180px;
+  height: 180px;
+  position: relative;
+  top: -20px;
+}
+
+.weather__icon-img {
+  width: 100%;
+  height: 100%;
+}
+
+.weather__pressure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px 0 40px;
+  width: 119px;
+  margin: 0 auto;
+}
+
+.weather__pressure-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.weather__pressure-value {
+  font-size: 14px;
+  line-height: 17px;
+  text-shadow: -1.39839px 2.09758px 0.69919px rgba(0, 0, 0, 0.1);
+}
+
+.weather__sunset {
+  font-size: 14px;
+  line-height: 110.7%;
+  color: #8A91AB;
+  text-align: center;
+  padding-bottom: 127px;
+}
+
+@media (min-width: 768px) {
+  .header__weather {
+    height: 65px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #2A2F45;
+  }
+  .weather__main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 434px;
+    height: 191px;
+  }
+  .weather__temperature {
+    font-size: 129.755px;
+  }
+  .weather__icon {
+    width: 191px;
+    height: 191px;
+    position: static;
+  }
+  .weather__name {
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 110.7%;
+  }
+  .weather__description {
+    padding: 16px 0;
+  }
+  .weather__pressure {
+    width: 131px;
+    padding: 45px 0 32px;
+  }
+  .weather__pressure-value {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .head__inner {
+    padding: 24px 11px 28px;
+  }
+  .head__back {
+    width: 81px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .head__back-text {
+    display: block;
+    font-size: 16px;
+    line-height: 110.7%;
+    color: #8A91AB;
+  }
+}
